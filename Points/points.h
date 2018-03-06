@@ -88,8 +88,16 @@ void Distance::print_finalArr(){
   cout<<"\n";
 }
 
+<<<<<<< HEAD
 // void Distance::print_initialArr(){
 //   for(int i=0; i<SIZEA; i++){
 //     cout<<"("<<initial_arr[i].get_x()<<","<<initial_arr[i].get_y()<<")"<<"\n";
 //   }
 // }
+=======
+void Distance::print_initialArr(){
+  for(int i=0; i<SIZEA; i++){
+    cout<<"("<<initial_arr[i].get_x()<<","<<initial_arr[i].get_y()<<")"<<"\n";
+  }
+}
+>>>>>>> 9ff3c0be200802ab4153af3482dbdfec5e89b18c
