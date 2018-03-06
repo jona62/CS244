@@ -1,0 +1,29 @@
+Description: This program computes the area and Perimeter of a circle as well as providing coordinates for the center.
+
+Circle ()
+  Default constructor that sets the initial variables to 0
+
+Circle (double, double)
+  A constructor that assigns values to center_x and center_y and radius equal to zero
+
+Circle (double, double, double)
+    A constructor that assigns values to center_x, center_y and radius to a value provided by the user
+
+void set_xy(double, double)
+  This function sets the values of the x and y coordinates of the circle
+void set_radius(double)
+  This function sets the value of the radius of the circle
+
+double calculate_area ()
+  This function calculates the area of the circle
+
+double calculate_p ()
+  This function calculates the Perimeter/ Circumference of the Circle
+
+double get_x ()
+  This function returns the value of center_x
+double get_y()
+  This function returns the value of center_y
+
+double get_radius()
+    This function returns the value of radius
