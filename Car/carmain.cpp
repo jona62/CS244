@@ -1,30 +1,34 @@
-//Jonathan James and Abigail Bisono
+//Jonathan James
+#include <iostream>
+#include <string>
+using namespace std;
 #include "car.h"
 
 int main(){
-  Car Toyota;
+  Car Honda(50);
+  Honda.set_fuel(121);
 
-  cout<<"("<<Toyota.x_coordinates()<<", "<<Toyota.y_coordinates()<<")\n";
-  cout<<"Fuel :"<<Toyota.get_fuel()<<". Speed: "<<Toyota.get_speed()<<"\n\n";
+  cout<<"("<<Honda.x_coordinates()<<", "<<Honda.y_coordinates()<<")\n";
+  cout<<"Fuel :"<<Honda.get_fuel()<<". Speed: "<<Honda.get_speed()<<"\n\n";
 
-  Toyota.set_fuel(10);
-  Toyota.set_speed(50);
-  Toyota.move("north");
+  Honda.turn('L');
+  Honda.move(13);
+  cout<<"("<<Honda.x_coordinates()<<", "<<Honda.y_coordinates()<<")\n";
+  cout<<"Fuel :"<<Honda.get_fuel()<<". Speed: "<<Honda.get_speed()<<"\n\n";
 
-  cout<<"("<<Toyota.x_coordinates()<<", "<<Toyota.y_coordinates()<<")\n";
-  cout<<"Fuel :"<<Toyota.get_fuel()<<". Speed: "<<Toyota.get_speed()<<"\n\n";
+  Honda.turn('L');
+  Honda.move(13);
+  cout<<"("<<Honda.x_coordinates()<<", "<<Honda.y_coordinates()<<")\n";
+  cout<<"Fuel :"<<Honda.get_fuel()<<". Speed: "<<Honda.get_speed()<<"\n\n";
 
-  Toyota.move("west");
-  cout<<"("<<Toyota.x_coordinates()<<", "<<Toyota.y_coordinates()<<")\n";
-  cout<<"Fuel :"<<Toyota.get_fuel()<<". Speed: "<<Toyota.get_speed()<<"\n\n";
+  Honda.turn('L');
+  Honda.move(13);
+  cout<<"("<<Honda.x_coordinates()<<", "<<Honda.y_coordinates()<<")\n";
+  cout<<"Fuel :"<<Honda.get_fuel()<<". Speed: "<<Honda.get_speed()<<"\n\n";
 
-  Toyota.move("south");
-  cout<<"("<<Toyota.x_coordinates()<<", "<<Toyota.y_coordinates()<<")\n";
-  cout<<"Fuel :"<<Toyota.get_fuel()<<". Speed: "<<Toyota.get_speed()<<"\n\n";
-
-  Toyota.move("east");
-  cout<<"("<<Toyota.x_coordinates()<<", "<<Toyota.y_coordinates()<<")\n";
-  cout<<"Fuel :"<<Toyota.get_fuel()<<". Speed: "<<Toyota.get_speed()<<"\n\n";
-
+  Honda.turn('L');
+  Honda.move(13);
+  cout<<"("<<Honda.x_coordinates()<<", "<<Honda.y_coordinates()<<")\n";
+  cout<<"Fuel :"<<Honda.get_fuel()<<". Speed: "<<Honda.get_speed()<<"\n\n";
   return 0;
 }
