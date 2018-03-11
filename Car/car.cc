@@ -1,4 +1,6 @@
 #include "car.h"
+
+//Default Constructor
 Car::Car(){
   fuel = 0;
   speed = 0;
@@ -6,6 +8,7 @@ Car::Car(){
   face = 'N';
 }
 
+//A constructor that sets the speed for the car
 Car::Car(double speed){
   fuel = 0;
   this->speed = speed;
@@ -13,14 +16,19 @@ Car::Car(double speed){
   face = 'N';
 }
 
+//Sets the amount of fuel in the car
 void Car::set_fuel(double fuel){
   this->fuel = fuel;
 }
 
+//Sets the speed of the car
 void Car::set_speed(double speed){
   this->speed = speed;
 }
 
+//Changes the position of the car with respect to the coordinate system
+//i.e if car is facing north it will increase y-coordinate and it will decreasing the value of the y-coordinate if the car is facing south.
+//Everytime you move the fuel decreaments by one(1)
 void Car::move(double DyDx){
   if(fuel > 0){
     fuel -= 1;
@@ -39,6 +47,7 @@ void Car::move(double DyDx){
   }
 }
 
+//Turns the car to a direction with respect to its current position
 void Car::turn(char direction){
   if(fuel > 0){
     fuel -= 1;
