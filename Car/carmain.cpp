@@ -2,29 +2,29 @@
 #include "car.h"
 
 int main(){
-  Car Toy;
+  Car Toyota;
 
-  cout<<"("<<Toy.x_coordinates()<<", "<<Toy.y_coordinates()<<")\n";
-  cout<<"Fuel :"<<Toy.get_fuel()<<". Speed: "<<Toy.get_speed()<<"\n\n";
+  cout<<"("<<Toyota.x_coordinates()<<", "<<Toyota.y_coordinates()<<")\n";
+  cout<<"Fuel :"<<Toyota.get_fuel()<<". Speed: "<<Toyota.get_speed()<<"\n\n";
 
-  Toy.set_fuel(10);
-  Toy.set_speed(50);
-  Toy.move("north");
+  Toyota.set_fuel(10);
+  Toyota.set_speed(50);
+  Toyota.move("north");
 
-  cout<<"("<<Toy.x_coordinates()<<", "<<Toy.y_coordinates()<<")\n";
-  cout<<"Fuel :"<<Toy.get_fuel()<<". Speed: "<<Toy.get_speed()<<"\n\n";
+  cout<<"("<<Toyota.x_coordinates()<<", "<<Toyota.y_coordinates()<<")\n";
+  cout<<"Fuel :"<<Toyota.get_fuel()<<". Speed: "<<Toyota.get_speed()<<"\n\n";
 
-  Toy.move("west");
-  cout<<"("<<Toy.x_coordinates()<<", "<<Toy.y_coordinates()<<")\n";
-  cout<<"Fuel :"<<Toy.get_fuel()<<". Speed: "<<Toy.get_speed()<<"\n\n";
+  Toyota.move("west");
+  cout<<"("<<Toyota.x_coordinates()<<", "<<Toyota.y_coordinates()<<")\n";
+  cout<<"Fuel :"<<Toyota.get_fuel()<<". Speed: "<<Toyota.get_speed()<<"\n\n";
 
-  Toy.move("south");
-  cout<<"("<<Toy.x_coordinates()<<", "<<Toy.y_coordinates()<<")\n";
-  cout<<"Fuel :"<<Toy.get_fuel()<<". Speed: "<<Toy.get_speed()<<"\n\n";
+  Toyota.move("south");
+  cout<<"("<<Toyota.x_coordinates()<<", "<<Toyota.y_coordinates()<<")\n";
+  cout<<"Fuel :"<<Toyota.get_fuel()<<". Speed: "<<Toyota.get_speed()<<"\n\n";
 
-  Toy.move("east");
-  cout<<"("<<Toy.x_coordinates()<<", "<<Toy.y_coordinates()<<")\n";
-  cout<<"Fuel :"<<Toy.get_fuel()<<". Speed: "<<Toy.get_speed()<<"\n\n";
+  Toyota.move("east");
+  cout<<"("<<Toyota.x_coordinates()<<", "<<Toyota.y_coordinates()<<")\n";
+  cout<<"Fuel :"<<Toyota.get_fuel()<<". Speed: "<<Toyota.get_speed()<<"\n\n";
 
   return 0;
 }
