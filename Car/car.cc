@@ -28,7 +28,7 @@ void Car::set_speed(double speed){
 
 //Changes the position of the car with respect to the coordinate system
 //i.e if car is facing north it will increase y-coordinate and it will decreasing the value of the y-coordinate if the car is facing south.
-//Everytime you move the fuel decreaments by one(1)
+//Everytime you move the fuel decrements by one(1)
 void Car::move(double DyDx){
   if(fuel > 0){
     fuel -= 1;
