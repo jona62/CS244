@@ -1,0 +1,28 @@
+Description:
+
+Car()
+  This is a default Constructor that initializes all the variables of the class
+
+Car(double)
+  An overloaded Constructor that sets the value of the speed variable
+
+void set_fuel(double)
+  This function sets the value of the fuel
+
+void set_speed(double)
+  This function sets the value of the Speed
+
+void move(double)
+  This function Changes the position of the car using (x,y) values, it will also check to see if there's enough fuel before it starts moving. It changes the 'y' value positively if the car is facing north and negatively if the car is facing south. Similarly the 'x' value would change positively when facing east and negatively when facing the west.
+
+void turn(char direction)
+  This function checks the current position the car is currently facing and then changes it appropriately.
+
+double get_fuel()
+  Return's the value of the fuel
+double get_speed()
+  Return's the value of the speed
+double x_coordinates()
+  Return's the value of the x_coordinate
+double y_coordinates()
+  Return's the value of the y_coordinate
