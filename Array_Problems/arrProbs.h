@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstdlib>
-#include <iomanip>
 #include <ctime>
 using namespace std;
 #ifndef ARRPROBS_H
@@ -27,7 +26,6 @@ void findGPA(int arr[], int size){ //Prints out a Letter grade based on a score
   average_grade = average_grade/size;
   switch(average_grade){
     case 0:
-      cout<<fixed<<setprecision(2);
       cout<<"Your grade is "<<average_grade<<".0 & Your GPA is F\n"; //Prints an F if grade is 0
       break;
     case 1:
