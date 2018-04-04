@@ -9,7 +9,8 @@ BaseBall::BaseBall(){
 
 //returns the batting average
 double BaseBall::battingAverage(){
-  return (hits/pitches);
+  double average = hits/pitches;
+  return average;
 }
 
 //returns number of misses
@@ -44,4 +45,5 @@ void BaseBall::pitch(){
     missed++;
   }
   pitches++;
+
 }
