@@ -7,17 +7,17 @@ using namespace std;
 
 class BaseBall{
   private:
-    int pitches;
-    int missed;
-    int hits;
-    int homeRuns;
+    double pitches;
+    double missed;
+    double hits;
+    double homeRuns;
   public:
     BaseBall();
     double battingAverage();
-    int getMisses();
-    int getPitches();
-    int getHits();
-    int getHomeRuns();
+    double getMisses();
+    double getPitches();
+    double getHits();
+    double getHomeRuns();
     void pitch();
 };
 

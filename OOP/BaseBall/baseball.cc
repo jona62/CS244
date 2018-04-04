@@ -14,22 +14,22 @@ double BaseBall::battingAverage(){
 }
 
 //returns number of misses
-int BaseBall::getMisses(){
+double BaseBall::getMisses(){
   return missed;
 }
 
 //returns number of pitches thrown
-int BaseBall::getPitches(){
+double BaseBall::getPitches(){
   return pitches;
 }
 
 //returns number of hits
-int BaseBall::getHits(){
+double BaseBall::getHits(){
   return hits;
 }
 
 //returns number of Home runs
-int BaseBall::getHomeRuns(){
+double BaseBall::getHomeRuns(){
   return homeRuns;
 }
 
