@@ -42,7 +42,7 @@ void Planets::set_distance_to_sun(double distance_to_sun){
 
 //returns the number of moons the planet has
 string Planets::get_moons(){
-  return moons;
+  return(moons == "")?("None"):moons;
 }
 
 //returns the name of the planet
@@ -74,7 +74,7 @@ double Planets::get_gravity_on_equator(){
 Sun::Sun(){
   set_planet_id("Sun");
   set_num_of_moons(0);
-  set_moons("None");
+  set_moons("");
   set_radius(696000);
   set_gravity_on_equator(274);
   set_distance_to_sun(0);
@@ -84,7 +84,7 @@ Sun::Sun(){
 Mercury::Mercury(){
   set_planet_id("Mercury");
   set_num_of_moons(0);
-  set_moons("None");
+  set_moons("");
   set_radius(2439.7);
   set_gravity_on_equator(3.7);
   set_distance_to_sun(0.35);
@@ -94,7 +94,7 @@ Mercury::Mercury(){
 Venus::Venus(){
   set_planet_id("Venus");
   set_num_of_moons(0);
-  set_moons("None");
+  set_moons("");
   set_radius(6051.9);
   set_gravity_on_equator(8.9);
   set_distance_to_sun(0.7);
