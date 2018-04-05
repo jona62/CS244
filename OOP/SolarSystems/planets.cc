@@ -1,5 +1,6 @@
 #include "planets.h"
 
+//Default constructor initializes variables
 Planets::Planets(){
   set_planet_id("");
   set_num_of_moons(0);
@@ -9,54 +10,67 @@ Planets::Planets(){
   set_distance_to_sun(0);
 }
 
+//sets the planets name
 void Planets::set_planet_id(string planet_id){
   this->planet_id = planet_id;
 }
 
+//sets the number of moons
 void Planets::set_num_of_moons(int num_of_moons){
   this->num_of_moons = num_of_moons;
 }
 
+//sets the names of the moons
 void Planets::set_moons(string moons){
   this->moons = moons;
 }
 
+//sets the radius of the planets
 void Planets::set_radius(double radius){
   this->radius = radius;
 }
 
+//sets the gravity of the planet
 void Planets::set_gravity_on_equator(double gravity_on_equator){
   this->gravity_on_equator = gravity_on_equator;
 }
 
+//sets the distance of the planet from the sun
 void Planets::set_distance_to_sun(double distance_to_sun){
   this->distance_to_sun = distance_to_sun;
 }
 
+//returns the number of moons the planet has
 string Planets::get_moons(){
   return moons;
 }
 
+//returns the name of the planet
 string Planets::get_planet_id(){
   return planet_id;
 }
 
+//returns the number of moons a planet has
 int Planets::get_num_of_moons(){
   return num_of_moons;
 }
 
+//returns the radius of a planet
 double Planets::get_radius(){
   return radius;
 }
 
+//returns the distance of the planet from the sun
 double Planets::get_distance_to_sun(){
   return distance_to_sun;
 }
 
+//returns the gravity of the planet
 double Planets::get_gravity_on_equator(){
   return gravity_on_equator;
 }
 
+//Default constructor initializes variables
 Sun::Sun(){
   set_planet_id("Sun");
   set_num_of_moons(0);
@@ -66,6 +80,7 @@ Sun::Sun(){
   set_distance_to_sun(0);
 }
 
+//Default constructor initializes variables
 Mercury::Mercury(){
   set_planet_id("Mercury");
   set_num_of_moons(0);
@@ -75,7 +90,7 @@ Mercury::Mercury(){
   set_distance_to_sun(0.35);
 }
 
-
+//Default constructor initializes variables
 Venus::Venus(){
   set_planet_id("Venus");
   set_num_of_moons(0);
@@ -85,6 +100,7 @@ Venus::Venus(){
   set_distance_to_sun(0.7);
 }
 
+//Default constructor initializes variables
 Earth::Earth(){
   set_planet_id("Earth");
   set_num_of_moons(1);
@@ -94,6 +110,7 @@ Earth::Earth(){
   set_distance_to_sun(1);
 }
 
+//Default constructor initializes variables
 Mars::Mars(){
   set_planet_id("Mars");
   set_num_of_moons(2);
@@ -103,6 +120,7 @@ Mars::Mars(){
   set_distance_to_sun(1.55);
 }
 
+//Default constructor initializes variables
 Jupiter::Jupiter(){
   set_planet_id("Jupiter");
   set_num_of_moons(69);
@@ -112,6 +130,7 @@ Jupiter::Jupiter(){
   set_distance_to_sun(5.25);
 }
 
+//Default constructor initializes variables
 Saturn::Saturn(){
   set_planet_id("Saturn");
   set_num_of_moons(62);
@@ -121,6 +140,7 @@ Saturn::Saturn(){
   set_distance_to_sun(9.5);
 }
 
+//Default constructor initializes variables
 Uranus::Uranus(){
   set_planet_id("Uranus");
   set_num_of_moons(27);
@@ -130,6 +150,7 @@ Uranus::Uranus(){
   set_distance_to_sun(19.2);
 }
 
+//Default constructor initializes variables
 Neptune::Neptune(){
   set_planet_id("Neptune");
   set_num_of_moons(14);

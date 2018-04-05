@@ -1,6 +1,7 @@
 #include "planets.h"
 
 int main(){
+  //Object Instantiation for each planet
   Sun sun;
   Mercury mercury;
   Venus venus;

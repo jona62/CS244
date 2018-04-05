@@ -29,6 +29,8 @@ class Planets{
     double get_distance_to_sun();
     double get_gravity_on_equator();
 
+    //Overloaded Ostream Operator to print the data of a planet
+    //setw() to setwidth of the display
     friend ostream& operator<<(ostream& outs, Planets& source){
       outs<<setw(30)<<source.get_planet_id()<<"\n";
       outs<<setw(30)<<"Number of Moons: "<<source.get_num_of_moons()<<"\n";
@@ -41,6 +43,7 @@ class Planets{
     }
 };
 
+//All classes below inherit from the Base class Planets
 class Sun:public Planets{
   public:
     Sun();
