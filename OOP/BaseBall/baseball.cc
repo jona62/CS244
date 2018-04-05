@@ -45,5 +45,4 @@ void BaseBall::pitch(){
     missed++;
   }
   pitches++;
-
 }
