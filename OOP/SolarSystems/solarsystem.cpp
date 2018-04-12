@@ -1,4 +1,4 @@
-#include "planets.h"
+#include "solarsystem.h"
 
 int main(){
   //Object Instantiation for each planet
