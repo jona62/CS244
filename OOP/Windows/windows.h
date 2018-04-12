@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef WINDOWS_H
 #define WINDOWS_H
 #include <iostream>
@@ -24,3 +25,15 @@ class Windows{
 
 
 #endif //WINDOWS_H
+=======
+#ifndef WINDOWS_H
+#define WINDOWS_H
+#include <iostream>
+using namespace std;
+
+class Windows{
+
+};
+
+#endif //WINDOWS_H
+>>>>>>> bb18d7e204cac975efef5dbc09d3e6208eec4d1b
