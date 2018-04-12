@@ -32,7 +32,7 @@ class Planets{
     //Overloaded Ostream Operator to print the data of a planet
     //setw() to setwidth of the display
     friend ostream& operator<<(ostream& outs, Planets& source){
-      outs<<setw(30)<<source.get_planet_id()<<"\n";
+      outs<<setw(10)<<source.get_planet_id()<<"\n";
       outs<<setw(30)<<"Number of Moons: "<<source.get_num_of_moons()<<"\n";
       outs<<setw(30)<<"Names of the Moon(s): "<<source.get_moons()<<"\n";
       outs<<setw(30)<<"Radius: "<<source.get_radius()<<"\n";
